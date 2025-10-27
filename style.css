@@ -1,28 +1,59 @@
 * {
-    box-sizing: border-box;
-    text-align: center;
+  box-sizing: border-box;
+  text-align: center;
 }
 body {
-    font-family: amiri;
-    direction: rtl;
-    text-align: center;
-    padding: min(50px,7%);
-    background-color: #3cff0046;
+  font-family: amiri;
+  direction: rtl;
+  text-align: center;
+  padding: min(50px, 7%);
+  /* تم تغيير اللون هنا */
+  background-color: #e6fff5;
+  /* تم تغيير اللون هنا */
+  color: #1c3a37;
 }
 h1 {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .all-card {
-    display: grid;
-grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-gap: 15px;
-    margin:auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin: auto;
 }
-.all-card .card{
-    padding: 2em;
-    background-color: #32a80d55;
-    border-radius: 22px;
-    font-size: 18px;
+.all-card .card {
+  padding: 2em;
+  /* تم تغيير اللون هنا */
+  background-color: #82d8c366;
+  border-radius: 22px;
+  font-size: 18px;
+  font-weight: 800
 }
 
+@media (min-width: 768px) {
+  .all-card {
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    line-height: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .all-card {
+    width: 970px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    line-height: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .all-card {
+    width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    line-height: 3;
+  }
+}
