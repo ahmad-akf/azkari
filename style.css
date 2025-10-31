@@ -50,6 +50,9 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     line-height: 3;
   }
+  .all-card .card {
+    font-size:30px
+  }
 }
 
 @media (min-width: 1200px) {
@@ -59,5 +62,9 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     line-height: 3;
   }
+  .all-card .card {
+    font-size:30px
+  }
 
 }
+
